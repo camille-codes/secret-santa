@@ -14,8 +14,6 @@ for i in range(int_no_ppl):
 #copies list and assigns to new variable
 list_randomized = list_names[:] 
 
-##random.shuffle(list_randomized)
-
 #using Fisher-Yates algorithm
 for i in range(len(list_randomized)-1, 0, -1):
     j = random.randint(0, i+1)
