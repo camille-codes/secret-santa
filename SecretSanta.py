@@ -3,10 +3,10 @@ from random import shuffle
 
 print('Welcome to Secret Santa!\n')
 no_of_ppl = input('Enter number of participants: ')
-int_no_ppl = int(no_of_ppl) ##converts string to integer
+int_no_ppl = int(no_of_ppl) #converts string to integer
 
 print('Enter names of participants:')
-##puts names of participants in a list
+#puts names of participants in a list
 list_names = []
 for i in range(int_no_ppl):
     list_names.append(input())
@@ -26,6 +26,6 @@ list_partners = dict(zip(list_names, list_randomized))
 
     
 # iterating list_partners dictionary
-## prints dictionary into two columns
+# prints dictionary into two columns
 for k, v in list_partners.items():
     print(f'{k:<10} {v}')
