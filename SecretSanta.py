@@ -17,8 +17,8 @@ for i in range(int_no_ppl):
 
 list_randomized = list_names[:] 
 
-#implementing Satollo Algorithm
-def sattoloCycle(list_randomized):
+#assigns each entrant with a partner
+def secretSanta(list_randomized):
     i = len(list_randomized)
     while i > 1:
         i = i - 1
@@ -26,7 +26,7 @@ def sattoloCycle(list_randomized):
         list_randomized[j], list_randomized[i] = list_randomized[i], list_randomized[j]
     return list_randomized
 
-list_satollo = sattoloCycle(list_randomized)
+list_satollo = secretSanta(list_randomized)
 
 input('Press Enter to begin shuffling...')
 
